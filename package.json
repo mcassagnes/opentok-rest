@@ -1,0 +1,20 @@
+{
+  "name": "opentok-rest",
+  "version": "1.0.0",
+  "description": "Unofficial OpenTok REST API",
+  "main": "lib/opentok.js",
+  "author": "Mathieu Cassagnes <mcassagnes@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^7.4.0",
+    "request": "^2.81.0",
+    "uuid": "^3.0.1"
+  },
+  "scripts": {
+    "test": "standard && NODE_ENV=test jasmine"
+  },
+  "devDependencies": {
+    "jasmine": "^2.6.0",
+    "standard": "^10.0.2"
+  }
+}
