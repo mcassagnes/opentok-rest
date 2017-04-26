@@ -21,9 +21,10 @@ const opentok = new OpenTokRest('opentok-key', 'opentok-secret')
 ```
 opentok.broadcast.start(sessionId, outputs)
   .then(broadcast => {
-    // resolves an opentok broadcast object. See doc for an example object: https://tokbox.com/developer/rest/#start_broadcast
+    // resolves an opentok broadcast object.
   })
 ```
+See doc for an example object: https://tokbox.com/developer/rest/#start_broadcast
 
 #### Start a broadcast
 ```
