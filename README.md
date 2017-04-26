@@ -17,7 +17,7 @@ const opentok = new OpenTokRest('opentok-key', 'opentok-secret')
 
 ## Broadcast
 
-### Start a broadcast
+#### Start a broadcast
 ```
 opentok.broadcast.start(sessionId, outputs)
   .then(broadcast => {
@@ -25,18 +25,19 @@ opentok.broadcast.start(sessionId, outputs)
   })
 ```
 
-### Start a broadcast
+#### Start a broadcast
 ```
 opentok.broadcast.stop(broadcastId)
   .then(broadcast => {
-    // resolves an opentok broadcast object. See doc for an example object: https://tokbox.com/developer/rest/#stop_broadcast
+    // resolves an opentok broadcast object.
+    // example response: https://tokbox.com/developer/rest/#stop_broadcast
   })
   .catch(...)
 ```
 
-### Set the layout
+#### Set the layout
+See https://tokbox.com/developer/rest/#change_live_streaming_layout for layout options
 ```
-// See https://tokbox.com/developer/rest/#change_live_streaming_layout for layout examples
 opentok.broadcast.setLayout(broadcastId, layout)
   .then(...)
   .catch(...)
@@ -44,10 +45,9 @@ opentok.broadcast.setLayout(broadcastId, layout)
 
 ## Archive
 
-### Set the layout
+#### Set the layout
+See https://tokbox.com/developer/beta/archive-custom-layout/#dynamically-changing-the-layout-type-while-the-session-is-being-archived for layout options
 ```
-// See https://tokbox.com/developer/beta/archive-custom-layout/#dynamically-changing-the-layout-type-while-the-session-is-being-archived
-// for layout options
 opentok.archive.setLayout(archiveId, layout)
   .then(...)
   .catch(...)
