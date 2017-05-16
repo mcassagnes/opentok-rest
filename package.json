@@ -1,6 +1,6 @@
 {
   "name": "opentok-rest",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "Unofficial OpenTok REST API",
   "main": "lib/opentok.js",
   "author": "Mathieu Cassagnes <mcassagnes@gmail.com>",
