@@ -42,10 +42,10 @@ describe('Session', function () {
       nock(tokboxApiHost, {
         reqHeaders: { 'X-OPENTOK-AUTH': jasmine.any(String) }
       })
-      .put(`/v2/project/${apiKey}/session/${sessionId}/stream`)
+      .get(`/v2/project/${apiKey}/session/${sessionId}/stream`)
       .reply(200, {message: 'ok'})
 
-      return session.setStreamClasses(sessionId).then((resp) => {
+      return session.getStreamClasses(sessionId).then((resp) => {
         expect(resp).toEqual({message: 'ok'})
       })
     })
