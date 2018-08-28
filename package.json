@@ -14,7 +14,8 @@
     "test": "standard && NODE_ENV=test jasmine"
   },
   "devDependencies": {
-    "jasmine": "^2.6.0",
+    "jasmine": "^2.8.0",
+    "nock": "^9.1.4",
     "standard": "^10.0.2"
   }
 }
